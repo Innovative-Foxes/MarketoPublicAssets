@@ -1,0 +1,280 @@
+/* ------------------------------------------------------------- */
+/* Copyright (c) 2025 Innovative Foxes. All rights reserved.     */
+/* ------------------------------------------------------------- */
+
+/* ------------------------------ */
+/* Reset styles                   */
+/* ------------------------------ */
+form,
+.mktoFormRow,
+.mktoFormRow > *,
+.mktoFieldDescriptor,
+.mktoFieldDescriptor > *,
+.mktoOffset,
+.mktoOffset > * {
+    all: unset !important;
+}
+
+.mktoLogicalField {
+    padding: 0 !important;
+}
+
+/* ------------------------------ */
+/* Base form elements             */
+/* ------------------------------ */
+form,
+.mktoFieldDescriptor,
+.mktoFieldWrap,
+form input,
+.mktoForm select.mktoField,
+.mktoForm textarea {
+    color: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    width: 100% !important;
+}
+
+.mktoForm {
+    margin: 0 auto;
+    max-width: 100% !important;
+}
+
+.mktoFormCol {
+    padding-right: 20px !important;
+}
+
+.mktoForm label {
+    color: var(--hero-marketo-form-text-label-color) !important;
+    font-family: inherit !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 2px !important;
+}
+
+.mktoForm label.mktoLabel {
+    color: var(--hero-marketo-form-text-label-color) !important;
+    padding-bottom: 0.25rem !important;
+}
+
+.mktoLabel {
+    width: auto !important;
+}
+
+/* ------------------------------ */
+/* Field inputs                   */
+/* ------------------------------ */
+.mktoField {
+    background: #fff !important;
+    background-image: none !important;
+    border: 1px solid rgb(154, 154, 154) !important;
+    border-radius: 4px;
+    min-height: 42px !important;
+}
+
+.mktoForm input,
+.mktoForm select.mktoField,
+textarea {
+    color: #4d4f53 !important;
+    font-size: 1rem !important;
+    height: 44px !important;
+    margin-bottom: 0.6rem !important;
+    padding: 0.4rem !important;
+}
+
+.mktoForm input[type="date"],
+.mktoForm input[type="email"],
+.mktoForm input[type="number"],
+.mktoForm input[type="tel"],
+.mktoForm input[type="text"],
+.mktoForm input[type="url"],
+.mktoForm select.mktoField,
+.mktoForm textarea.mktoField {
+    font-size: 1rem !important;
+    padding: 0.75rem !important;
+}
+
+.mktoFieldWrap select:last-of-type {
+    margin-bottom: 0.6rem !important;
+}
+
+/* ------------------------------ */
+/* Input focus / states            */
+/* ------------------------------ */
+input:focus,
+textarea:focus {
+    border: 1px solid rgb(120, 120, 120) !important;
+    outline: none !important;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    appearance: auto !important;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* ------------------------------ */
+/* Select dropdowns                */
+/* ------------------------------ */
+.mktoForm select {
+    appearance: none !important;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 640'><path d='M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z'/></svg>") !important;
+    background-position: right 1rem center !important;
+    background-repeat: no-repeat !important;
+    background-size: 0.9rem !important;
+}
+
+/* ------------------------------ */
+/* Checkboxes / Radios             */
+/* ------------------------------ */
+.mktoCheckboxList,
+.mktoForm .mktoRadioList {
+    width: 100% !important;
+}
+
+.mktoForm .mktoCheckboxList > input,
+.mktoForm .mktoRadioList > input {
+    height: 16px !important;
+    margin-top: 4px !important;
+    min-height: auto !important;
+    width: 16px !important;
+}
+
+.mktoForm .mktoCheckboxList > label,
+.mktoForm .mktoRadioList > label {
+    font-weight: normal !important;
+    line-height: unset !important;
+    margin-top: 0 !important;
+}
+
+.mktoForm .mktoRadioList > input,
+.mktoForm .mktoRadioList label {
+    margin-bottom: 4px !important;
+}
+
+.mktoRadioList {
+    padding-left: 0 !important;
+    width: auto !important;
+}
+
+.mktoRadioList input {
+    margin-top: 0.125rem !important;
+}
+
+/* ------------------------------ */
+/* Misc hidden elements            */
+/* ------------------------------ */
+.mktoAsterix,
+.mktoGutter {
+    display: none !important;
+}
+
+/* ------------------------------ */
+/* Errors                          */
+/* ------------------------------ */
+.mktoError {
+    bottom: auto !important;
+    margin-top: 100px !important;
+    right: auto !important;
+}
+
+/* ------------------------------ */
+/* Text / HTML content             */
+/* ------------------------------ */
+.mktoHtmlText {
+    color: #fff !important;
+    margin: auto !important;
+    padding: 0 !important;
+    width: auto !important;
+}
+
+.mktoHtmlText.mktoHasWidth > a,
+.mktoHtmlText.mktoHasWidth > a:hover {
+    color: #fff !important;
+    padding: 0 !important;
+    text-decoration: underline !important;
+}
+
+/* ------------------------------ */
+/* Buttons                         */
+/* ------------------------------ */
+.mktoButtonRow {
+    width: 100% !important;
+}
+
+.mktoButtonRow span {
+    margin-left: 0 !important;
+}
+
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    -webkit-appearance: button;
+    all: unset;
+    box-sizing: border-box;
+    cursor: pointer !important;
+    display: revert;
+    font-family: inherit !important;
+    line-height: 24px;
+    margin: 0 auto !important;
+    overflow: visible;
+    text-align: center !important;
+    text-transform: none;
+    transition: all 0.1s ease-in-out !important;
+    width: auto !important;
+}
+
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    background: var(--hero-marketo-form-button-bg-color) !important;
+    border: none !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 14px var(--shadow-primary) !important;
+    color: var(--hero-marketo-form-button-text-color) !important;
+    cursor: pointer !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    margin-top: 1rem !important;
+    padding: 0.75rem 1.5rem !important;
+    transition: all 0.3s ease !important;
+}
+
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+    background: var(--hero-marketo-form-hover-button-bg-color) !important;
+    box-shadow: 0 6px 20px var(--shadow-primary-hover) !important;
+    color: var(--hero-marketo-form-button-text-color) !important;
+}
+
+/* ------------------------------ */
+/* Textareas                       */
+/* ------------------------------ */
+.mktoForm textarea {
+    min-height: 60px !important;
+    resize: vertical !important;
+}
+
+/* ------------------------------ */
+/* Responsive adjustments          */
+/* ------------------------------ */
+@media only screen and (min-width: 768px) {
+    .mktoFormRow {
+        display: flex !important;
+    }
+
+    .mktoGutter {
+        width: 0 !important;
+    }
+
+    .mktoRadioList {
+        width: auto !important;
+    }
+}
